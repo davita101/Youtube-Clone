@@ -25,8 +25,7 @@ const SearchBarr = () => {
        />
        <IconButton type='submit' sx={{
            p: '10px',
-           color: 'red'
-           }}>
+           color: 'red'}}>
         <Search />
        </IconButton>
     </Paper>
