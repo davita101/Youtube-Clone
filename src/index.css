@@ -58,6 +58,9 @@ a {
   cursor:pointer;
   outline: none;
   border: none;
+  width: 2-50px;
+  text-wrap: nowrap;
+  text-align: start;
 
   padding: 7px 15px;
   margin: 10px 0px;

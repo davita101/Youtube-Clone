@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
-import axios from 'axios'
 import { fetchFromAPI } from '../utils/fetchFromAPI.js'
 import {Sidebar, Video} from './index.js'
 
@@ -15,7 +14,8 @@ function Feed() {
   },[selectCategory])
 
   return (
-    <Stack sx={{
+    <Stack
+     sx={{
       flexDirection: { sx: "column", md: 'row' }
     }}>
       <Box sx={{
@@ -30,15 +30,15 @@ function Feed() {
           Copyright 2022 DG Meida
         </Typography>
       </Box>
-      <Box>
+      <Box
+      p={1}
+      >
         <Typography
           variant='h4'
           fontWeight='bold'
-          mb={2}
-          p={2}
+          
           sx={{
             overflowY: 'auto',
-            height: '90vh',
             flex: 2,
             color: 'white'
           }}>
@@ -46,7 +46,6 @@ function Feed() {
             Videos
           </span>
         </Typography>
-
         <Video videos={videos} />
       </Box>
     </Stack>

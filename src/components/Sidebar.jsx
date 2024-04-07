@@ -4,7 +4,7 @@ import { categories } from '../utils/constants'
 
 const Sidebar = ({ selectCategory, setSelectCategory}) => (
     <Stack
-        direction="row"
+        direction="col"
         sx={{
             overflowY: 'auto',
             height: { sx: 'auto', md: '95' },
@@ -19,13 +19,13 @@ const Sidebar = ({ selectCategory, setSelectCategory}) => (
             >
                 <span
                     className={`text-[${category.name === selectCategory ?
-                        'white' : 'red'}] mr-[10px]`}
+                        'white' : 'red'}] mr-[20px]`}
                 >
                     {category.icon}
                 </span>
                 <span
                     className={`${category.name === selectCategory ?
-                        'opacity-[1]' : 'opacity-[0.8]'}`}
+                        'opacity-[1]' : 'opacity-[0.8] w-full'}`}
                 >
                     {category.name}
                 </span>
