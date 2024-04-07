@@ -14,3 +14,6 @@
 
 ## 💻 About the App:
 This website emulates YouTube functionalities, allowing users to watch videos, search keywords, view statistics, and more. It is fully responsive and visually engaging.
+
+## 🧠 Notice:
+when fetch API in vite always write VITE_... in .env file
